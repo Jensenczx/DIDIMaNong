@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amap.api.maps2d.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#8CC152"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/bt_java"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_java"
+                    />
+                <Button
+                    android:id="@+id/bt_python"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_python"/>
+                <Button
+                    android:id="@+id/bt_ruby"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_ruby"/>
+
+                <Button
+                    android:id="@+id/bt_php"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_php"/>
+                <Button
+                    android:id="@+id/bt_html"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_html5"/>
+                <Button
+                    android:id="@+id/bt_android"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_android"/>
+                <Button
+                    android:id="@+id/bt_ios"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_apple"/>
+                <Button
+                    android:id="@+id/bt_wp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_windows"/>
+                <Button
+                    android:id="@+id/bt_linux"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_linux"/>
+                <Button
+                    android:id="@+id/bt_fix"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_fix"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <EditText
+            android:id="@+id/input_question"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:focusable="false"
+            android:textColorHint="@color/white"
+            android:hint="我遇到的问题"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

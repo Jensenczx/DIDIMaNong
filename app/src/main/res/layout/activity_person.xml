@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chenjensen.testapp.PersonActivity">
+    <TextView
+        android:id="@+id/ds_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8CC152"
+        android:text="大师信息"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"/>
+    <ImageView
+        android:layout_below="@id/ds_title"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_account"
+        android:id="@+id/imageView" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/ds_title"
+        android:id="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_photo"
+        app:border_width="2dp"
+        app:border_color="#FF000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@id/profile_image"
+        android:text="擅长午夜上门维修电脑"
+        android:id="@+id/profile_info" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_info"
+        android:text="星级评价:"
+        android:id="@+id/profile_star"
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/profile_star"
+        android:layout_below="@id/profile_info"
+        android:background="@drawable/ic_star"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/star1"
+        android:layout_below="@id/profile_info"
+        android:background="@drawable/ic_star"/>
+
+    <ListView
+        android:id="@+id/user_comment"
+        android:layout_below="@id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+
+</RelativeLayout>
